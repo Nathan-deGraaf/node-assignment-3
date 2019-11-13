@@ -1,0 +1,43 @@
+//- NOTE - I was using a dynamic form of showing the Game Of Thrones Data, However when i used dynamic methods the episodes would view out of order. Unfortunatly i had run out of time to create a sort function to organize them. so for this assignment ive made it hardcoded
+
+extends layout
+
+block content
+  div
+    h1 Game Of Thrones Season One
+    main#main
+      div.wrapper
+        a#subscribe.subscribe(href="subscribe") Subscribe To The Newsletter!
+      .thanks
+        h2 #{message}
+      section.index
+        .card#eps1
+          h3.title Eps. 1 - Winter Is Coming
+          p.description Lord Ned Stark is troubled by disterbing reports from a Night's Watch deserter; King Robert and the Lannisters arrive at Winterfell; the exiled Viserys Targaryen forges a powerfull new allegiance.
+        .card#eps2
+          h3.title Eps. 2 - The Kingsroad
+          p.description The Lannisters plot to ensure Bran's silence; Jon and Tyrion head to the Wall; Ned faces a family crises en route to King's Landing.
+        .card#eps3
+          h3.title Eps. 3 - Lord Snow
+          p.description Jon impresses Tyrion at Casle Black; Ned confronts his past and future at King's Landing; Daenerys is at odds with Viserys.
+        .card#eps4
+          h3.title Eps. 4 - Cripples, Bastards, and Broken Things
+          p.description Ned probes Arryn's death; Jon takes measures to protect Sam; Tyrion is caught in the wrong place.
+        .card#eps5
+          h3.title Eps. 5 - The Wolf and the Lion
+          p.description Ned refuses an order from the King; Tyrion escapes one perilous encounter, only to find himself another.
+        .card#eps6
+          h3.title Eps. 6 - A Golden Crown
+          p.description Ned makes a controversial decree; Tyrion confesses to his 'crimes'; Viserys receives final payment for Daenerys.
+        .card#eps7
+          h3.title Eps. 7 - You Win or You Die
+          p.description Ned confronts Cersei about her secrets; Jon takes his Night's Watch vows; Drogo promises to lead the Dothraki to King's Landing.
+        .card#eps8
+          h3.title Eps. 8 - The Pointy End
+          p.description The Lannisters press their advantage over the starks; Robb  rallies his father's northern allies and heads south for war.
+        .card#eps9
+          h3.title Eps. 9 - Baelor
+          p.description Ned makes a fateful decision; Robb takes a prized prisoner; Dany finds her reign imperiled.
+        .card#eps10
+          h3.title Eps. 10 - Fire and Blood
+          p.description A new king rises in the North; a Khaleesi finds new hope.

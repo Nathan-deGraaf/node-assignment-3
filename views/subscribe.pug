@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  main
+    section.centered
+      h1  Subscribe to the Newsletter
+      div.grid
+      form(action="/subscribe" method="POST", enctype='application/x-www-form-urlencoded')
+        fieldset
+          legend Please fill out all fields
+          section.form
+
+            label.required(for='name') Name 
+            input#name(type='text', name='name', placeholder='Please enter name', required)
+
+            label.required(for='email') Email 
+            input#email(type='email', name='email', placeholder='Please enter email', required)
+
+            label.span2(for='adult') Are you over 18?
+            input#adult.span2(type='checkbox' name='adult', value='true',required)
+
+            input#submit.span(type='submit', value='REGISTER') 
